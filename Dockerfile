@@ -12,10 +12,10 @@ RUN apk add openjdk8-jre
 RUN addgroup -g 1000 minim && adduser -H -D -G minim -s /bin/false -u 1000 minim
 
 # download and extract MinimServer
-RUN wget -O /opt/MinimServer-0.8.3f-linux-x64.tar.gz http://jminim.com/abra/MinimServer-0.8.3f-linux-x64.tar.gz && \
-	cd /opt && \
-	tar xf MinimServer-0.8.3f-linux-x64.tar.gz && \
-	rm MinimServer-0.8.3f-linux-x64.tar.gz
+RUN wget -O /opt/MinimServer-0.8.3f-linux-x64.tar.gz http://minimserver.com/downloads/MinimServer-0.8.3f-linux-x64.tar.gz && \
+cd /opt && \
+tar xf MinimServer-0.8.3f-linux-x64.tar.gz && \
+rm MinimServer-0.8.3f-linux-x64.tar.gz
 
 # HTTP (data) and UPnP (discovery) ports used by MinimServer
 EXPOSE 9790 9791
