@@ -13,7 +13,7 @@ RUN addgroup -g 1000 minim && adduser -H -D -G minim -s /bin/false -u 1000 minim
 
 # download and extract MinimServer
 RUN wget -O minimserver.tar.gz http://jminim.com/abra/MinimServer-0.8.3f-linux-x64.tar.gz && \
-tar -xf minimserver.tar.gz && \
+tar -xvzf minimserver.tar.gz && \
 rm minimserver.tar.gz
 
 # HTTP (data) and UPnP (discovery) ports used by MinimServer
