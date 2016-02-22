@@ -23,4 +23,4 @@ VOLUME /music
 
 USER minim
 
-ENTRYPOINT ["/minimserver/bin/startc"]
+ENTRYPOINT ["/minimserver/minimserver-0.8.3f/bin/startc"]
